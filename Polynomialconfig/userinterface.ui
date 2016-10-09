@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>userinterface</class>
+ <widget class="QDialog" name="userinterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>561</width>
+    <height>469</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>210</y>
+     <width>75</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QDoubleSpinBox" name="coeffA">
+      <property name="minimum">
+       <double>-99.989999999999995</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDoubleSpinBox" name="coeffB">
+      <property name="minimum">
+       <double>-99.989999999999995</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDoubleSpinBox" name="coeffC">
+      <property name="minimum">
+       <double>-99.989999999999995</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDoubleSpinBox" name="coeffD">
+      <property name="minimum">
+       <double>-99.989999999999995</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDoubleSpinBox" name="coeffE">
+      <property name="minimum">
+       <double>-99.989999999999995</double>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDoubleSpinBox" name="coeffF">
+      <property name="minimum">
+       <double>-99.989999999999995</double>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>94</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="aCoeff">
+      <property name="text">
+       <string>Coefficient a:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="bCoeff">
+      <property name="text">
+       <string>Coefficient b:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="cCoeff">
+      <property name="text">
+       <string>Coefficient c:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="dCoeff">
+      <property name="text">
+       <string>Coefficient d:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="eCoeff">
+      <property name="text">
+       <string>Coefficient e:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="fCoeff">
+      <property name="text">
+       <string>Coefficient f:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>410</y>
+     <width>269</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="plotButton">
+      <property name="text">
+       <string>Plot</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="resetButton">
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelButton">
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>350</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Welcome to the NXT Plotter assistant !</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="orderText">
+      <property name="text">
+       <string>First, select the degree of the polynomial function.:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>475</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="orderText_2">
+      <property name="text">
+       <string>Select the coefficient(s) of the</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox">
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>constant</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>linear</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>quadratic</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>cubic</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>quartic</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>quintic</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="orderText_4">
+      <property name="text">
+       <string>function.</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>421</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Degree</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="orderSlider">
+      <property name="whatsThis">
+       <string>Select the order of te polynomial by moving the slider</string>
+      </property>
+      <property name="maximum">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBothSides</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="u_orderPoly">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>210</y>
+     <width>204</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>The polynomial equation is:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="quintic">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>240</y>
+     <width>204</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;y = ax&lt;span style=&quot; vertical-align:super;&quot;&gt;5 &lt;/span&gt;+ bx&lt;span style=&quot; vertical-align:super;&quot;&gt;4&lt;/span&gt; + cx&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt; + dx&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt; + ex + f&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="quartic">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>240</y>
+     <width>204</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;y = ax&lt;span style=&quot; vertical-align:super;&quot;&gt;4&lt;/span&gt; + bx&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt; + cx&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt; + dx + e&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="linear">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>240</y>
+     <width>204</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;y = ax + b&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cubic">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>240</y>
+     <width>204</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;y = ax&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt; + bx&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt; + cx + d&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="quadratic">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>240</y>
+     <width>204</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;y = ax&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt; + bx + c&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="constant">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>240</y>
+     <width>204</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;y = a&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>orderSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>u_orderPoly</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>u_orderPoly</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>436</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>436</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>orderSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>comboBox</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>386</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>314</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>coeffA</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>389</x>
+     <y>423</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>coeffB</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>376</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>coeffC</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>362</x>
+     <y>431</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>293</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>coeffE</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>422</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>374</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>coeffD</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>407</x>
+     <y>427</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>202</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>coeffF</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>353</x>
+     <y>418</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>178</x>
+     <y>404</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>userinterface</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>483</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>orderSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>327</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
